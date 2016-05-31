@@ -1,0 +1,9 @@
+
+module.exports = {
+      LIST_EDIT: 'LIST_EDIT',
+      LIST_EDIT_CANCEL: 'LIST_EDIT_CANCEL',
+      LIST_SAVE: 'LIST_SAVE',
+      LIST_SEARCH: 'LIST_SEARCH',
+      LIST_DELETE: 'LIST_DELETE',
+      LIST_REORDER: 'LIST_REORDER'
+};

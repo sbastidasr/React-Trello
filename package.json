@@ -1,0 +1,28 @@
+{
+  "name": "horizonello",
+  "license": "MIT",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:horizons-school-of-technology/horizonello.git"
+  },
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "express": "4.13.4",
+    "express-handlebars": "3.0.0",
+    "underscore": "1.8.3",
+    "flux": "^2.0.3",
+    "jquery": "^2.1.4",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
+  },
+  "devDependencies": {
+    "rimraf": "2.5.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "clean": "rimraf .tmp/",
+    "watch": "watchify  static/main.js -t reactify -o static/bundle.js",
+    "build": "browserify static/main.js -t reactify  | uglifyjs -mc warnings=false > static/bundle.js"
+  }
+}
